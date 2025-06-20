@@ -56,12 +56,12 @@ const Hero = () => {
   },{dependencies:[currentIndex],revertOnUpdate:true})
 
   useGSAP(()=>{
-    gsap.set('#video-frame',{clipPath: 'polygon(14% 0, 72% 0, 90% 90%, 0% 100%)',borderRadius:'0 0  40% 10%'})
+    gsap.set('#video-frame',{clipPath: 'polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)',borderRadius:'0 0 50% 50%'})
 
     gsap.from('#video-frame',{
       clipPath:'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
       borderRadius:'0 0 0 0',
-      ease:'power4.inOut',
+      ease:'power2.inOut',
       scrollTrigger:{
         trigger:'#video-frame',
         start:'center center',
